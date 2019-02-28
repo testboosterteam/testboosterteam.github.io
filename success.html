@@ -19,30 +19,47 @@
 
     <!--    Место для вставки FacebookPixel-->
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '334369177286197');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '334369177286197');
+        fbq('track', 'PageView');
+
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=334369177286197&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->
+    <!-- End Facebook Pixel Code -->
 
     <!--    Место для вставки FacebookPixel-->
 
 </head>
 
 <body>
+    <!--    Место для вставки FacebookPixel события-->
+    <script>
+        fbq('track', 'CompleteRegistration');
 
+    </script>
+
+    <!--    Место для вставки FacebookPixel события-->
 
     <!-- header nav start-->
     <header id="header" class="header header-transparent" style="display: none;">
@@ -180,7 +197,7 @@
             </div>
         </div>
     </footer>
-    <script type='text/javascript' src='assets/libs/jquery-3.2.1.min.js'></script>    
+    <script type='text/javascript' src='assets/libs/jquery-3.2.1.min.js'></script>
     <script type='text/javascript' src='assets/scripts/bootstrap3.min.js'></script>
     <script type='text/javascript' src='assets/scripts/owl.carousel7.min.js'></script>
     <script type='text/javascript' src='assets/scripts/testimonial-slider18.js'></script>
