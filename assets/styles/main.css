@@ -2070,10 +2070,9 @@ ul.bblock-icon-list-items.bblock-inline-items .bblock-inline-item {
 }
 
 .bblock-button.bblock-size-md {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 4px
 }
 
 .bblock-button.bblock-size-lg {
@@ -9294,14 +9293,14 @@ code {
 
 .bblock-2042 .bblock-block.bblock-block-9981ed9 .section-title span {
     color: #54595f;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase
 }
 
 .bblock-2042 .bblock-block.bblock-block-9981ed9 .section-title {
     color: #00bbff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600
 }
 
@@ -9558,6 +9557,11 @@ body {
     height: auto
 }
 
+.bblock-2042 .bblock-section-wrap {
+    min-height: calc(100vh - 50px); 
+    padding-top: 30px;
+}
+
 .bblock-block-46aad3a .bblock-background-overlay .after {
     width: 142px;
     height: 280px;
@@ -9569,6 +9573,42 @@ body {
     -webkit-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
     transform: rotate(35deg)
+}
+
+.pointers-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
+    margin-top: 10px;
+    animation: pointing 1s ease-in-out infinite;
+}
+
+.pointers-container .pointer {
+    width: 50px;
+    padding: 0 10px;
+}
+
+
+
+.pointers-container .pointer img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes pointing {
+    
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(20px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+    
 }
 
 @media screen and (min-width: 320px) and (max-width: 575px) {
